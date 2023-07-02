@@ -1,0 +1,51 @@
+#friends-display-link {
+    display: block;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+#friends-display-link i {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}
+.friends-screen__channel-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.4);
+}
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden; /* 애니매이션 종료 후 웹브라우저에서 div를 무시하도록*/
+    }
+}
+
+#splash-screen {
+    background-color: var(--pink);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards; /* forwards: 애니매이션 종료 후 상태 유지 */
+    animation-delay: 0.4s;
+}
+#splash-screen img {
+    width: 100%;
+}
